@@ -1,12 +1,5 @@
 import { useState } from 'react';
-import {
-  Box,
-  Button,
-  Container,
-  FormControl,
-  TextField,
-  Typography,
-} from '@mui/material';
+import { Box, Container, TextField, Typography } from '@mui/material';
 import Message from './message/Message';
 
 interface MessageProps {
@@ -28,6 +21,9 @@ function Terminal() {
 
     setMessageHistory([newItem, ...messageHistory]);
     setMessage('');
+
+    const historyBox = document.getElementById('messages-history')!;
+    historyBox.scrollTop = 0;
   };
 
   const renderMessages = () => {
@@ -47,12 +43,14 @@ function Terminal() {
   return (
     <Container maxWidth="sm">
       <Box
+        id="messages-history"
         style={{
           backgroundColor: '#2B3039',
           padding: '16px',
           borderRadius: '5px',
           maxHeight: '200px',
           overflow: 'auto',
+          marginTop: '24px',
         }}
       >
         {renderMessages()}

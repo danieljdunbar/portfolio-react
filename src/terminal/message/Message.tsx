@@ -11,11 +11,17 @@ function Message(props: Props) {
   };
 
   return (
-    <Box style={{ display: 'flex', flexDirection: 'row' }}>
-      <Typography color={getColor()} style={{ marginRight: '8px' }}>
-        &lt; {props.userMessage ? 'User' : 'Jane'} &gt;
+    <Box>
+      <Typography color="#EBF0EF">
+        <Typography
+          color={getColor()}
+          style={{ marginRight: '8px', display: 'inline' }}
+        >
+          &lt; {props.userMessage ? 'User' : 'Jane'} &gt;
+        </Typography>
+
+        {props.text}
       </Typography>
-      <Typography color="#EBF0EF">{props.text}</Typography>
     </Box>
   );
 }
