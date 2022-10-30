@@ -41,7 +41,7 @@ function Terminal() {
   };
 
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="sm" sx={{ padding: '0px' }}>
       <Box
         id="messages-history"
         style={{
