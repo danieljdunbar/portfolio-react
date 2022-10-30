@@ -56,15 +56,12 @@ function Terminal() {
         {renderMessages()}
       </Box>
 
-      {/* <Box component="form" onSubmit={handleSubmit}> */}
-      {/* <FormControl fullWidth onSubmit={handleSubmit}> */}
       <form onSubmit={handleSubmit}>
         <TextField
           variant="outlined"
           fullWidth
           value={message}
           onChange={handleChange}
-          //   onSubmit={handleSubmit}
           sx={{
             backgroundColor: '#2B3039',
             marginTop: '24px',
@@ -72,9 +69,6 @@ function Terminal() {
           }}
         />
       </form>
-      {/* <Button onClick={handleSubmit}>Submit</Button> */}
-      {/* </FormControl> */}
-      {/* </Box> */}
     </Container>
   );
 }
