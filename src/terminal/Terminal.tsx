@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Box, Container, TextField, Typography } from '@mui/material';
 import Message from './message/Message';
+import { getAiResponse } from 'ai-chat';
 
 interface MessageProps {
   text: string;
@@ -15,7 +16,7 @@ function Terminal() {
     setMessage(event.target.value);
   };
 
-  const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
     const newItem: MessageProps = { text: message, userMessage: true };
 
@@ -24,6 +25,12 @@ function Terminal() {
 
     const historyBox = document.getElementById('messages-history')!;
     historyBox.scrollTop = 0;
+
+    const response = await getAiResponse(newItem.text);
+    setMessageHistory((history) => [
+      { text: response, userMessage: false },
+      ...history,
+    ]);
   };
 
   const renderMessages = () => {

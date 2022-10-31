@@ -32,7 +32,7 @@ app.post('/ai-chat', async (req, res) => {
     const completion = await openai.createCompletion(openAiRequest);
     const aiResponse = completion.data.choices[0].text;
 
-    if (!!aiResponse) {
+    if (aiResponse) {
       res.status(200).send({ aiResponse });
       return;
     }
