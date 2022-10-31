@@ -1,0 +1,146 @@
+[debug] [2022-10-31T15:13:24.901Z] ----------------------------------------------------------------------
+[debug] [2022-10-31T15:13:24.903Z] Command:       /Users/danieldunbar/.nvm/versions/node/v18.12.0/bin/node /Users/danieldunbar/.nvm/versions/node/v18.12.0/bin/firebase emulators:start
+[debug] [2022-10-31T15:13:24.903Z] CLI Version:   11.15.0
+[debug] [2022-10-31T15:13:24.903Z] Platform:      darwin
+[debug] [2022-10-31T15:13:24.903Z] Node Version:  v18.12.0
+[debug] [2022-10-31T15:13:24.904Z] Time:          Mon Oct 31 2022 11:13:24 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-10-31T15:13:24.904Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-31T15:13:24.986Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-31T15:13:24.986Z] > authorizing via signed-in user (dunbardanielj@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-10-31T15:13:25.708Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-31T15:13:25.708Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-31T15:13:25.708Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":4002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-10-31T15:13:25.718Z] [hub] writing locator at /var/folders/rz/gwfxznzs3v17krr7wr1tfqzc0000gn/T/hub-portfolio-c2896.json
+[debug] [2022-10-31T15:13:26.098Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-31T15:13:26.099Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-31T15:13:26.099Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":4002}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":4001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-10-31T15:13:26.125Z] defaultcredentials: writing to file /Users/danieldunbar/.config/firebase/dunbardanielj_gmail_com_application_default_credentials.json
+[debug] [2022-10-31T15:13:26.137Z] Setting GAC to /Users/danieldunbar/.config/firebase/dunbardanielj_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/danieldunbar/.config/firebase/dunbardanielj_gmail_com_application_default_credentials.json"}}
+[debug] [2022-10-31T15:13:26.139Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c2896/adminSdkConfig [none]
+[debug] [2022-10-31T15:13:26.503Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c2896/adminSdkConfig 200
+[debug] [2022-10-31T15:13:26.503Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c2896/adminSdkConfig {"projectId":"portfolio-c2896","storageBucket":"portfolio-c2896.appspot.com"}
+[debug] [2022-10-31T15:13:26.544Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-c2896/sites 
+[debug] [2022-10-31T15:13:27.058Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-c2896/sites 200
+[debug] [2022-10-31T15:13:27.058Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-c2896/sites {"sites":[{"name":"projects/portfolio-c2896/sites/portfolio-c2896","defaultUrl":"https://portfolio-c2896.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-31T15:13:27.058Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c2896/webApps/-/config [none]
+[debug] [2022-10-31T15:13:27.456Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c2896/webApps/-/config 200
+[debug] [2022-10-31T15:13:27.456Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c2896/webApps/-/config {"projectId":"portfolio-c2896","storageBucket":"portfolio-c2896.appspot.com","apiKey":"AIzaSyAvAQdr3rGQuEqJw5ZKCbEA4UY_VLPR84U","authDomain":"portfolio-c2896.firebaseapp.com","messagingSenderId":"615150296495"}
+[debug] [2022-10-31T15:13:27.482Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c2896 [none]
+[debug] [2022-10-31T15:13:27.785Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c2896 200
+[debug] [2022-10-31T15:13:27.785Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c2896 {"projectId":"portfolio-c2896","projectNumber":"615150296495","displayName":"Portfolio","name":"projects/portfolio-c2896","resources":{"hostingSite":"portfolio-c2896"},"state":"ACTIVE","etag":"1_6335a85c-43f2-4e5f-8825-64d041e0a3d9"}
+[info] i  hosting[portfolio-c2896]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting[portfolio-c2896]: Local server: http://127.0.0.1:4002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:4002\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.11.1.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.1.zip..."}}
+[debug] [2022-10-31T15:13:27.919Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.1.zip 
+[debug] [2022-10-31T15:13:28.083Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.1.zip 200
+[debug] [2022-10-31T15:13:28.083Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.1.zip [stream]
+[info] i  ui: Removing outdated emulator files: ui-v1.6.4 {"metadata":{"emulator":{"name":"ui"},"message":"Removing outdated emulator files: ui-v1.6.4"}}
+[info] i  ui: Removing outdated emulator files: ui-v1.6.4.zip {"metadata":{"emulator":{"name":"ui"},"message":"Removing outdated emulator files: ui-v1.6.4.zip"}}
+[debug] [2022-10-31T15:13:28.478Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-31T15:13:28.478Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-31T15:13:28.478Z] Starting Emulator UI with command {"binary":"node","args":["/Users/danieldunbar/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/danieldunbar/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-10-31T15:13:28.586Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-10-31T15:13:28.586Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/danieldunbar/Documents/projects/portfolio/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/danieldunbar/Documents/projects/portfolio/functions\" for Cloud Functions..."}}
+[debug] [2022-10-31T15:13:28.748Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-31T15:13:29.935Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-10-31T15:13:29.936Z] Building nodejs source
+[debug] [2022-10-31T15:13:29.936Z] Analyzing nodejs backend spec
+[debug] [2022-10-31T15:13:29.938Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-31T15:13:30.158Z] Serving at port 9005
+
+[debug] [2022-10-31T15:13:30.197Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-31T15:13:30.203Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://127.0.0.1:4001/portfolio-c2896/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:4001/portfolio-c2896/us-central1/helloWorld)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:4001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:4002 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-10-31T15:13:59.067Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-31T15:13:59.068Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-31T15:13:59.068Z] Accepted request GET /portfolio-c2896/us-central1/helloWorld --> us-central1-helloWorld
+[debug] [2022-10-31T15:13:59.073Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-31T15:13:59.074Z] [functions] Got req.url=/portfolio-c2896/us-central1/helloWorld, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/portfolio-c2896/us-central1/helloWorld, mapping to path=/"}}
+[debug] [2022-10-31T15:13:59.084Z] [worker-pool] addWorker(us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloWorld)"}}
+[debug] [2022-10-31T15:13:59.085Z] [worker-pool] Adding worker with key us-central1-helloWorld, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloWorld, total=1"}}
+[debug] [2022-10-31T15:13:59.711Z] [runtime-status] [33675] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-31T15:13:59.712Z] [runtime-status] [33675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-31T15:13:59.712Z] [runtime-status] [33675] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-31T15:13:59.712Z] [runtime-status] [33675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-31T15:13:59.739Z] [runtime-status] [33675] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-31T15:13:59.739Z] [runtime-status] [33675] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-31T15:13:59.740Z] [runtime-status] [33675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-31T15:13:59.740Z] [runtime-status] [33675] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-31T15:13:59.741Z] [runtime-status] [33675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-31T15:13:59.741Z] [runtime-status] [33675] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/danieldunbar/Documents/projects/portfolio/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-31T15:13:59.746Z] [runtime-status] [33675] Functions runtime initialized. {"cwd":"/Users/danieldunbar/Documents/projects/portfolio/functions","node_version":"18.12.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] Functions runtime initialized. {\"cwd\":\"/Users/danieldunbar/Documents/projects/portfolio/functions\",\"node_version\":\"18.12.0\"}"}}
+[debug] [2022-10-31T15:13:59.746Z] [runtime-status] [33675] Listening to port: /var/folders/rz/gwfxznzs3v17krr7wr1tfqzc0000gn/T/fire_emu_0a422f4e83e6244d.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [33675] Listening to port: /var/folders/rz/gwfxznzs3v17krr7wr1tfqzc0000gn/T/fire_emu_0a422f4e83e6244d.sock"}}
+[debug] [2022-10-31T15:13:59.803Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[debug] [2022-10-31T15:13:59.804Z] [worker-us-central1-helloWorld-1eba0bad-8389-4f1d-8429-45efee4e2b63]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloWorld-1eba0bad-8389-4f1d-8429-45efee4e2b63]: BUSY"}}
+[info] i  functions: Beginning execution of "helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"helloWorld\""}}
+[info] >  {"structuredData":true,"severity":"INFO","message":"Hello logs!"} {"user":{"structuredData":true,"severity":"INFO","message":"Hello logs!"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"structuredData\":true,\"severity\":\"INFO\",\"message\":\"Hello logs!\"}"}}
+[debug] [2022-10-31T15:13:59.810Z] [worker-us-central1-helloWorld-1eba0bad-8389-4f1d-8429-45efee4e2b63]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloWorld-1eba0bad-8389-4f1d-8429-45efee4e2b63]: IDLE"}}
+[debug] [2022-10-31T15:13:59.810Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "helloWorld" in 3.206698ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"helloWorld\" in 3.206698ms"}}
+[debug] [2022-10-31T15:13:59.977Z] Functions emulator received unknown request at path /favicon.ico
+[info] i  hosting: 127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] "GET / HTTP/1.1" 200 676 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] \"GET / HTTP/1.1\" 200 676 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] "GET /static/css/main.073c9b0a.css HTTP/1.1" 200 - "http://localhost:4002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] \"GET /static/css/main.073c9b0a.css HTTP/1.1\" 200 - \"http://localhost:4002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] "GET /static/js/main.767b213f.js HTTP/1.1" 200 - "http://localhost:4002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] \"GET /static/js/main.767b213f.js HTTP/1.1\" 200 - \"http://localhost:4002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://localhost:4002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://localhost:4002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:4002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:4002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://localhost:4002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [31/Oct/2022:15:14:33 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://localhost:4002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
