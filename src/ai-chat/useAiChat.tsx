@@ -5,7 +5,7 @@ interface AiChatResponse {
 export async function getAiResponse(message: string): Promise<string> {
   try {
     const response = await fetch(
-      process.env.REACT_APP_API_BASE_URL + '/ai-chat',
+      'https://us-central1-portfolio-c2896.cloudfunctions.net/backend/ai-chat',
       {
         method: 'POST',
         headers: {
