@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Box, Container, TextField, Typography } from '@mui/material';
-import Message from './message/Message';
+import { Message } from './message';
 import { getAiResponse } from 'ai-chat';
 
 interface MessageProps {

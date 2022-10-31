@@ -5,7 +5,7 @@ interface Props {
   userMessage: boolean;
 }
 
-function Message(props: Props) {
+export function Message(props: Props) {
   const getColor = () => {
     return props.userMessage ? '#26B3EC' : '#25E090';
   };
@@ -25,5 +25,3 @@ function Message(props: Props) {
     </Box>
   );
 }
-
-export default Message;
